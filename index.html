@@ -3,9 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Desafio Media-Q</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Bebas+Neue&family=Great+Vibes&family=Oswald:wght@300&family=Raleway&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/add5bfd0c6.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./assets/img/logo.jpg" type="image/x-icon">
 </head>
-<body>
+
+<body class="container">
+
+    <header>
+        <nav>
+            <section class="logo movil">
+                <a href="#"><img src="./assets/img/logo.jpg" alt="Logo"></a>
+                
+            </section>
+            <section class="titulo movil">
+               <a href=""> <h1>Panaderia & Market <br> 
+                D'Pieri</h1></a>
+               
+            </section>
+            <section class="bars">
+                <i class="fa-solid fa-bars fa-2xl"></i>
+            </section>
+            <section class="link ocultar">
+                <ul>
+                    <a href="#"><i class="fa-solid fa-house fa-xl"></i> Inicio</a>
+                    <a href="#"><i class="fa-solid fa-basket-shopping fa-xl"></i> Productos</a>
+                    <a href="#"><i class="fa-solid fa-info fa-xl"></i> Ayuda</a>
+                    <a href="#"><i class="fa-solid fa-phone fa-xl"></i> Contacto</a>
+                </ul>
+            </section>
+            
+        </nav>
+    </header>
+
+    <aside>
+        <h2 class="tab-h2">Ordenar por:</h2>
+        <section class="filtro">
+            <label for="control">Categoria</label>
+            <select name="Categoria" id="Categoria">Categoria</select>
+        </section>
+        <section class="cat1 ocultar tab">
+        <h2>Categoria:</h2>
+            <section>
+                <a href="#">Panaderia <small>(15)</small></a>
+                <a href="#">Cecinas <small>(45)</small></a>
+                <a href="#">Bebidas <small>(29)</small></a>
+                <a href="#">Abarrotes <small>(35)</small></a>
+                <a href="#">Articulos de Limpieza <small>(32)</small></a>
+                <a href="#">Mascotas <small>(12)</small></a>
+            </section>
+        </section>
+        
+        <section class="cat2 ocultar">
+            <h2>Lo más vendido:</h2>
+            <img src="./assets/img/aside ofer.jpg" alt="pan">
+            <p>Pan Piñita: un suave pan con una <br> cubierta de azúcar que en compañia <br> de un excelente queso y un buen cafe <br> con leche serian los protagonistas de <br> una excelente merienda.</p>
+        </section>
+        
+    </aside>
+
+
+    <main>
+        <section class="card">
+            <img src="https://www.recetavenezolana.com/wp-content/uploads/2019/07/RFB-0407-1-pancanillavenezolano.jpg" alt="Product Image" class="card-image">
+            <div class="card-content">
+                <h2 class="card-title">Pan Francés Venezolano</h2>
+                <p class="card-description">
+                  Consequat amet laboris sunt ea culpa non pariatur mollit proident. Ut do consectetur voluptate aliqua minim eu ad sunt proident. 
+                  Qui quis est aliqua elit consectetur laborum.
+                </p>
+                <p class="card-price">$2.300 * kilo</p>
+            </div>
+            <button class="card-button">Comprar</button>
+        </section>
+            
+        <section class="card ocultar">
+                <img src="https://m.media-amazon.com/images/I/61G1UpvpD+L._AC_UF894,1000_QL80_.jpg" alt="Product Image" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Margarina y Mayonesa Mavesa</h2>
+                    <p class="card-description">
+                      Consequat amet laboris sunt ea culpa non pariatur mollit proident. Ut do consectetur voluptate aliqua minim eu ad sunt proident. 
+                      Qui quis est aliqua elit consectetur laborum.
+                    </p>
+                    <p class="card-price">Combo por tan solo $7.990</p>
+                </div>
+                <button class="card-button">Comprar</button>
+
+            </section>
+
+        <section class="card ocultar tab">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjKjhOZvZQeakz74xMYVCC4xaWL90tNxVqJA&s" alt="Product Image" class="card-image">
+                    <div class="card-content">
+                        <h2 class="card-title">Malta Polar</h2>
+                        <p class="card-description">
+                          Consequat amet laboris sunt ea culpa non pariatur mollit proident. Ut do consectetur voluptate aliqua minim eu ad sunt proident. 
+                          Qui quis est aliqua elit consectetur laborum.
+                        </p>
+                        <p class="card-price">$1.490</p>
+                    </div>
+                    <button class="card-button">Comprar</button>
+                </section>
+
+        <section class="card ocultar tab">
+                        <img src="https://es.allofpan.com/wp-content/uploads/2021/10/harina-1.jpg" alt="Product Image" class="card-image">
+                        <div class="card-content">
+                            <h2 class="card-title">Harina Pan</h2>
+                            <p class="card-description">
+                              Consequat amet laboris sunt ea culpa non pariatur mollit proident. Ut do consectetur voluptate aliqua minim eu ad sunt proident. 
+                              Qui quis est aliqua elit consectetur laborum.
+                            </p>
+                            <p class="card-price">$1.290</p>
+                        </div>
+                        <button class="card-button">Comprar</button>  
+                    </section>
+
+        <section class="card ocultar tab">
+                            <img src="https://tofuu.getjusto.com/orioneat-local/resized2/EocFvnGH6ujJqyHre-2400-x.webp" alt="Product Image" class="card-image">
+                            <div class="card-content">
+                                <h2 class="card-title">Cachitos de jamón y queso</h2>
+                                <p class="card-description">
+                                  Consequat amet laboris sunt ea culpa non pariatur mollit proident. Ut do consectetur voluptate aliqua minim eu ad sunt proident. 
+                                  Qui quis est aliqua elit consectetur laborum.
+                                </p>
+                                <p class="card-price">$2.490</p>
+                            </div>
+                            <button class="card-button">Comprar</button>
+        </section>
+
+        <section class="card ocultar tab">
+            <img src="https://pbs.twimg.com/profile_images/1817474350/MAIN_LLAVES_400x400.jpg" class="card-image">
+            <div class="card-content">
+                <h2 class="card-title">Productos Las Llaves</h2>
+                <p class="card-description">
+                  Consequat amet laboris sunt ea culpa non pariatur mollit proident. Ut do consectetur voluptate aliqua minim eu ad sunt proident. 
+                  Qui quis est aliqua elit consectetur laborum.
+                </p>
+                <p class="card-price">Combo tan solo por: $12.990</p>
+            </div>
+            <button class="card-button">Comprar</button>
+</section>
+
+<section class="card ocultar tab">
+    <img src="https://i.pinimg.com/736x/5f/98/93/5f98931a4a38e7332bafb4bee51ac5ce.jpg" alt="Product Image" class="card-image">
+    <div class="card-content">
+        <h2 class="card-title">Frescolita</h2>
+        <p class="card-description">
+          Consequat amet laboris sunt ea culpa non pariatur mollit proident. Ut do consectetur voluptate aliqua minim eu ad sunt proident. 
+          Qui quis est aliqua elit consectetur laborum.
+        </p>
+        <p class="card-price">$1.490</p>
+    </div>
+    <button class="card-button">Comprar</button>
+</section>
+
+<section class="card ocultar tab">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0yG-4PLBRQMm8SkVXYIoNwGY-C4D46lW63Q&s" alt="Product Image" class="card-image">
+    <div class="card-content">
+        <h2 class="card-title">Casabe</h2>
+        <p class="card-description">
+          Consequat amet laboris sunt ea culpa non pariatur mollit proident. Ut do consectetur voluptate aliqua minim eu ad sunt proident. 
+          Qui quis est aliqua elit consectetur laborum.
+        </p>
+        <p class="card-price">$3.490</p>
+    </div>
+    <button class="card-button">Comprar</button>
+</section>
+    </main>
+
+
+    <footer>
+        <section class="redes">
+            <a href="#"><i class="fa-brands fa-square-facebook fa-2xl"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram fa-2xl"></i></a>
+            <a href="#"><i class="fa-brands fa-square-whatsapp fa-2xl"></i></a>
+            <a href="#"><i class="fa-brands fa-square-youtube fa-2xl"></i></a>
+            
+    </section>
+        <section class="Copyright">
+            <article> Copyright 2025 © <br> Todos los derechos reservados. <br> Creado por: Andrés Peña</article>
+        </section>
+        
+        <section class="ubi ocultar tab">
+            <a href="#"> <i class="fa-solid fa-map-location-dot fa-2xl"></i></a>
+           
+            <h3>Encuentanos en la RM y otras regiones de chile</h3>
+        </section>
+    </footer>
+
+
+
     
 </body>
 </html>
