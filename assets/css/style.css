@@ -2,8 +2,12 @@ body{
     display: grid;
     grid-template-areas: 
     'header header header header'
+    'aside search search search'
     'aside main main main'
+    'aside button button button'
     'footer footer footer footer';
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
     gap: 10px;
     background-image: url(../img/back.jpg);
     background-size: cover;
@@ -38,12 +42,31 @@ aside{
     
 }
 
+.search{
+    grid-area: search;
+}
+
 main{
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;  
     border-radius: 10px;
+}
+
+.button{
+    grid-area: button;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.but{
+    color: chocolate;
+    width: 3.5rem;
+    height: 2rem;
+    font-size: medium;
 }
 
 footer{
@@ -180,6 +203,14 @@ h2{
     background-color: rgb(100, 52, 17);
 }
 
+.button{
+    grid-area: button;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+}
+
 .ubi{
     display: flex;
     align-items: center;
@@ -202,9 +233,15 @@ h2{
 
 @media screen and (max-width: 576px){
     body{ 
-        grid-template-areas: 'header' 'aside' 'main' 'footer';
+        grid-template-areas: 
+        'header'
+        'search' 
+        'aside' 
+        'main'
+        'button' 
+        'footer';
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows:auto auto auto auto auto auto;
         background-image: url(../img/back.jpg);
         background-size: cover;
         background-position: center;
@@ -228,6 +265,7 @@ h2{
         
     }
 
+
     main{
         display: flex;
         justify-content: space-around;
@@ -240,17 +278,38 @@ h2{
         gap: 15px;
         text-align: center;
     }
+
+    .search{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .search input{
+        width: 100%;
+        height: 4rem;
+        border-radius: 8px;
+        border: none;
+        font-family: "Aclonica", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1rem;
+
+        
+    }
 }
 
 @media screen and (min-width: 577px) and (max-width: 992px){
     body{
         grid-template-areas: 
         'header'
+        'search'
         'aside'
-        'main' 
+        'main'
+        'button' 
         'footer';
         grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto ;
+        grid-template-rows: auto auto auto auto auto auto;
         background-image: url(../img/back.jpg);
         background-size: cover;
         background-position: center;
@@ -288,6 +347,26 @@ h2{
 
     .Copyright{
     text-align: center;
+
+    }
+
+    .search{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .search input{
+        width: 100%;
+        height: 4rem;
+        border-radius: 8px;
+        border: none;
+        font-family: "Aclonica", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.6rem;
+
+        
     }
 
 
@@ -299,7 +378,9 @@ h2{
     body{
     grid-template-areas: 
     'header header header header'
+    'aside search search search'
     'aside main main main'
+    'aside button button button'
     'footer footer footer footer';
     gap: 10px;
 
@@ -316,6 +397,25 @@ h2{
 
     .tab-h2{
         display: none;
+    }
+
+    .search{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .search input{
+        width: 100%;
+        height: 4rem;
+        border-radius: 8px;
+        border: none;
+        font-family: "Aclonica", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.6rem;
+
+        
     }
 }
 
